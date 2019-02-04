@@ -1,0 +1,27 @@
+# coding:utf-8
+
+from eureka import articles
+
+article1 = []
+
+for article in articles:
+
+	article = article.split(",")
+
+	if len(article) >= 4:
+
+		media = article[0]
+
+		section = article[1]
+
+		page = article[3]
+
+		mot = article[2].split()[4]
+
+print("Cet article a été publié par " + media + " dans la section " + section + ". Sa longueur est de " + mot + " mots et il apparaît à la page " + page + ".")
+
+
+# J'ai vraiment bloqué à la dernière consigne de l'exercice. Je crois mal maîtriser la commande .count
+#Ce n'est vraiment pas facile tout ça et j'ai hâte de voir le corrigé au prochain cours!
+# J'ai consulté plusieurs documents sur Internet ainsi que des vidéos YouTube, mais ceux-ci ne sont souvent pas adaptés aux listes et au journalisme.
+
